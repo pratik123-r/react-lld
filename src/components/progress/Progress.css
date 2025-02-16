@@ -1,0 +1,15 @@
+
+.progress-bar {
+    height: 10px;
+    width: 120px;
+    /* background-color: blue; */
+    margin-top: 50px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+
+.inner-div {
+    background-color: blue;
+    height: 100%;
+    /* width: 0; */
+}

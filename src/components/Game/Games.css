@@ -1,0 +1,22 @@
+.matrix {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 40px;
+    flex-wrap: wrap; 
+}
+
+.element {
+    height: 33.33%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    cursor: pointer;
+    
+}
+
+

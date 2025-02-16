@@ -1,0 +1,37 @@
+.traffic-container {
+    border: 1px solid black;
+    height: 125px;
+    width: 35px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.light {
+    border: 1px solid black;
+    border-radius: 50%;   
+    height: 25px;
+    width: 25px;
+}
+
+.inactive {
+    background-color: gray;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color:yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+
+

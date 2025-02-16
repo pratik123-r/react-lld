@@ -1,0 +1,11 @@
+.otp-container {
+    display: flex;
+    column-gap: 4px;
+    margin: 25px;
+    flex-wrap: wrap;
+}
+
+.input {
+    height: 25px;
+    width: 25px;
+}
