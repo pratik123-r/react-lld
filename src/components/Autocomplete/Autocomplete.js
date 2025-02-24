@@ -36,6 +36,19 @@ function Autocomplete({ onChange, data }) {
 
 export default function AutocompleteConfig() {
 
+    const { list, onSearch } = useAutocomplete()
+
+    return (
+        <>
+            <Autocomplete onChange={({ value }) => onSearch(value)} data={list}> </Autocomplete>
+        </>
+    )
+
+
+}
+
+
+function useAutocomplete() {
     const [list, setList] = useState([])
     const [search, setSearch] = useState("")
 
@@ -45,7 +58,6 @@ export default function AutocompleteConfig() {
         let { products } = res
         setList(products)
     }
-
 
     useEffect(() => {
         const timeout = setTimeout(onFetchList, 300)
@@ -57,13 +69,7 @@ export default function AutocompleteConfig() {
     function onSearch(value) {
         setSearch(value)
     }
-
-
-    return (
-        <>
-            <Autocomplete onChange={({ value }) => onSearch(value)} data={list}> </Autocomplete>
-        </>
-    )
-
-
+    return {
+        list, onSearch
+    }
 }
