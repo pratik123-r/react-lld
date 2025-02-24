@@ -1,13 +1,11 @@
 import { useState } from 'react'
 import './Rating.css'
 
-export default function Rating({ totalStars }) {
-
-    const [currentRating, setCurrentRating ] = useState(0)
-    const [hover, setHover ] = useState(0)
+function Rating({ totalStars, currentRating, onChange }) {
+    const [hover, setHover] = useState(0)
 
     function onSetRating(index) {
-        setCurrentRating(index)
+        onChange({value : index})
     }
 
     return (
@@ -15,12 +13,12 @@ export default function Rating({ totalStars }) {
             <div className='star-container'>
                 {
                     new Array(totalStars).fill(1).map((val, index) => (
-                        <div 
-                            key={index} 
-                            onMouseEnter={() => setHover(index+1)} 
-                            onMouseLeave={() => setHover(0)} 
-                            onClick={() => onSetRating(index+1)} 
-                            className={`star  ${ (currentRating > index || hover > index) ? 'backgroung' : ''} `}
+                        <div
+                            key={index}
+                            onMouseEnter={() => setHover(index + 1)}
+                            onMouseLeave={() => setHover(0)}
+                            onClick={() => onSetRating(index + 1)}
+                            className={`star  ${(currentRating > index || hover > index) ? 'backgroung' : ''} `}
                         >
                         </div>
                     ))
@@ -29,4 +27,15 @@ export default function Rating({ totalStars }) {
 
         </>
     )
+}
+
+
+export default function RatingConfig() {
+    const [rating, setRating] = useState()
+    return (<>
+        <Rating totalStars={5} currentRating={rating}  onChange={({value}) => setRating(value)}>
+
+        </Rating>
+    </>)
+
 }

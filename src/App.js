@@ -5,7 +5,13 @@ import Traffic from "./components/traffic/Traffic";
 import Otp from "./components/otp/Otp.js";
 import AllInputs from "./components/Form/Form.js";
 import Games from "./components/Game/Games.js";
-import Rating from "./components/Rating/Rating.js";
+import RatingConfig from "./components/Rating/Rating.js";
+import DropDownConfig from "./components/Dropdown/Dropdown.js";
+import AccordionConfig from "./components/Accordion/Accordion.js";
+import TabConfig from "./components/Tab/Tab.js";
+import GridConfig from "./components/Grid/Grid.js";
+import Pagination from "./components/Pagination/Pagination.js";
+import AutocompleteConfig from "./components/Autocomplete/Autocomplete.js";
 
 const lightConifg = {
   red : {
@@ -86,7 +92,13 @@ function App() {
       {/* <button onClick={onButtonClik}>click me</button> */}
       {/* <Demo a={a}></Demo> */}
       {/* <Games></Games> */}
-      <Rating totalStars={5}></Rating>
+      {/* <RatingConfig ></RatingConfig> */}
+      {/* <DropDownConfig></DropDownConfig> */}
+      {/* <AccordionConfig></AccordionConfig> */}
+      {/* <TabConfig></TabConfig> */}
+      {/* <GridConfig></GridConfig> */}
+      {/* <Pagination></Pagination> */}
+      <AutocompleteConfig></AutocompleteConfig>
     </>
   );
 }

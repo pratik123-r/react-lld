@@ -1,0 +1,23 @@
+.grid-stack-container {
+    display: grid;
+    margin: 24px;
+}
+
+.grid {
+    height: 48px;
+    width: 48px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.yellow-background {
+    background-color: yellow;
+}
+
+.disable {
+    pointer-events: none;
+}
+
+.white-background {
+    background-color: white;
+}
