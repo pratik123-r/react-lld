@@ -12,6 +12,7 @@ import TabConfig from "./components/Tab/Tab.js";
 import GridConfig from "./components/Grid/Grid.js";
 import Pagination from "./components/Pagination/Pagination.js";
 import AutocompleteConfig from "./components/Autocomplete/Autocomplete.js";
+import InfiniteScrollConfig from "./components/InfiniteScroll/InfiniteScroll.js";
 
 const lightConifg = {
   red : {
@@ -98,7 +99,8 @@ function App() {
       {/* <TabConfig></TabConfig> */}
       {/* <GridConfig></GridConfig> */}
       {/* <Pagination></Pagination> */}
-      <AutocompleteConfig></AutocompleteConfig>
+      {/* <AutocompleteConfig></AutocompleteConfig> */}
+      <InfiniteScrollConfig></InfiniteScrollConfig>
     </>
   );
 }
