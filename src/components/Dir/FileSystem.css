@@ -1,0 +1,21 @@
+.dir {
+    margin-left: 30px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.file-system {
+    margin-left: 500px;
+}
+
+.add-btn {
+    border: 0.5px solid black;
+    padding: 1px;
+    width: fit-content;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.file-info {
+    display: flex;
+}

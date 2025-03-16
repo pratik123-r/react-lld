@@ -13,6 +13,7 @@ import GridConfig from "./components/Grid/Grid.js";
 import Pagination from "./components/Pagination/Pagination.js";
 import AutocompleteConfig from "./components/Autocomplete/Autocomplete.js";
 import InfiniteScrollConfig from "./components/InfiniteScroll/InfiniteScroll.js";
+import FileSystem from "./components/Dir/FileSystem.js";
 
 const lightConifg = {
   red : {
@@ -100,7 +101,8 @@ function App() {
       {/* <GridConfig></GridConfig> */}
       {/* <Pagination></Pagination> */}
       {/* <AutocompleteConfig></AutocompleteConfig> */}
-      <InfiniteScrollConfig></InfiniteScrollConfig>
+      {/* <InfiniteScrollConfig></InfiniteScrollConfig> */}
+      <FileSystem></FileSystem>
     </>
   );
 }

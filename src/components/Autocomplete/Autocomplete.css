@@ -2,6 +2,7 @@
     margin: 25px;
     position: relative;
     width: 300px;
+    right: 0;
 }
 
 .autocomplete-input {

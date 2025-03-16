@@ -5,7 +5,7 @@ export default function AllInputs() {
     text: "",
     password: "",
     number: 0,
-    checkbox: false,
+    checkbox: "",
     radio: "",
     select: "",
     textarea: "",
@@ -22,7 +22,7 @@ export default function AllInputs() {
     const { name, type, value, checked, files } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? checked : type === "file" ? files[0] : value,
+      [name]: type === "file" ? files[0] : value,
     }));
   };
 
@@ -72,7 +72,8 @@ export default function AllInputs() {
           <input
             type="checkbox"
             name="checkbox"
-            checked={formData.checkbox}
+            value="pratik"
+            // checked={formData.checkbox}
             onChange={handleChange}
           />
         </label>

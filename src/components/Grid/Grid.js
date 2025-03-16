@@ -43,7 +43,7 @@ function Grid({ n }) {
 
     return (
         <>
-            <div className='grid-stack-container' style={{ gridTemplateColumns: `repeat(${n}, 0fr)` }}>
+            <div className='grid-stack-container' style={{ gridTemplateColumns: `repeat(${n}, 100px)` }}>
                 {
                     grid.map((data, index) => (
                         <div onClick={() => fillColor(index)}   className={`grid ${isPoping.current ? 'disable' : ''} ${data ? 'yellow-background disable' : ''}`}>
