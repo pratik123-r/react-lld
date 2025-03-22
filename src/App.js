@@ -14,6 +14,7 @@ import Pagination from "./components/Pagination/Pagination.js";
 import AutocompleteConfig from "./components/Autocomplete/Autocomplete.js";
 import InfiniteScrollConfig from "./components/InfiniteScroll/InfiniteScroll.js";
 import FileSystem from "./components/Dir/FileSystem.js";
+import Carousel from "./components/Carousel/Carousel.js";
 
 const lightConifg = {
   red : {
@@ -102,7 +103,8 @@ function App() {
       {/* <Pagination></Pagination> */}
       {/* <AutocompleteConfig></AutocompleteConfig> */}
       {/* <InfiniteScrollConfig></InfiniteScrollConfig> */}
-      <FileSystem></FileSystem>
+      {/* <FileSystem></FileSystem> */}
+      <Carousel></Carousel>
     </>
   );
 }
