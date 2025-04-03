@@ -72,7 +72,6 @@ export default function NestedCheckBox() {
     function onSelect(id) {
         const updatedCheckbox = [...checkbox]
         toggleCheckBox(updatedCheckbox, id)
-        markParent(updatedCheckbox)
         setCheckboxData(updatedCheckbox)
     }
 
@@ -84,8 +83,10 @@ export default function NestedCheckBox() {
                     markChildren(checkbox.children, checkbox.checked)
                 return
             }
-            if (checkbox.children)
+            if (checkbox.children) {
                 toggleCheckBox(checkbox.children, id)
+                checkbox.checked = checkbox.children.every((data) => data.checked)
+            }
         }
     }
 
@@ -97,14 +98,6 @@ export default function NestedCheckBox() {
         }
     }
 
-    function markParent(checkboxData) {
-        for (let checkbox of checkboxData) {
-            if (checkbox.children)
-                markParent(checkbox.children)
-            if (checkbox.children)
-                checkbox.checked = checkbox.children.every((data) => data.checked)
-        }
-    }
 
     return (
         <>
