@@ -15,6 +15,8 @@ import AutocompleteConfig from "./components/Autocomplete/Autocomplete.js";
 import InfiniteScrollConfig from "./components/InfiniteScroll/InfiniteScroll.js";
 import FileSystem from "./components/Dir/FileSystem.js";
 import Carousel from "./components/Carousel/Carousel.js";
+import JiraConfig from "./components/Jira/Jira.js";
+import NestedCheckBox from "./components/NestedCheckBox/NestedCheckBox.js";
 
 const lightConifg = {
   red : {
@@ -104,7 +106,9 @@ function App() {
       {/* <AutocompleteConfig></AutocompleteConfig> */}
       {/* <InfiniteScrollConfig></InfiniteScrollConfig> */}
       {/* <FileSystem></FileSystem> */}
-      <Carousel></Carousel>
+      {/* <Carousel></Carousel> */}
+      {/* <JiraConfig></JiraConfig> */}
+      <NestedCheckBox></NestedCheckBox>
     </>
   );
 }

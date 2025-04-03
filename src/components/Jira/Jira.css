@@ -1,0 +1,24 @@
+.jira-card-container {
+    margin: 50px;
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.jira-card {
+    border: 1px solid black;
+    padding: 24px;
+    min-width: 70px;
+}
+
+.jira-task {
+    margin-top: 20px;
+    border: 0.5px solid rgb(170, 101, 235);
+    padding: 12px;
+    cursor: pointer;
+}
+
+.jira-card-input {
+
+    
+}
