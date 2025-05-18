@@ -17,9 +17,11 @@ import FileSystem from "./components/Dir/FileSystem.js";
 import Carousel from "./components/Carousel/Carousel.js";
 import JiraConfig from "./components/Jira/Jira.js";
 import NestedCheckBox from "./components/NestedCheckBox/NestedCheckBox.js";
+import { Link, Outlet } from "react-router-dom";
+import Breadcrumbs from "./components/breadcrumbs/Breadcrumbs.jsx";
 
 const lightConifg = {
-  red : {
+  red: {
     time: 3000,
     next: "green"
   },
@@ -49,7 +51,7 @@ function App() {
   //       incrementProgress()
   //       // await new Promise((res,rej)=> setTimeout(()=>res(2), 3000))
   //       // console.log("11");
-        
+
   //     }, 2000);
   //   }
 
@@ -65,7 +67,7 @@ function App() {
 
   // function incrementProgress () {
   //   console.log(progress);
-    
+
   //   setProgress((prevProgress) => {
   //     const updatedProgress = [...prevProgress];
   //     updatedProgress[currentId] += 1;
@@ -78,7 +80,7 @@ function App() {
   //  const timeout = setTimeout(() => {
 
   //     setActiveLight(lightConifg[activeLight].next)
-      
+
   //   }, lightConifg[activeLight].time);
 
   //   return () => clearTimeout(timeout)
@@ -88,27 +90,45 @@ function App() {
 
   return (
     <>
-      {/* {progress.map((data, index) => (
-        <Progress key={index} complete={data} />
-      ))} */}
-      {/* <Traffic active={activeLight}></Traffic> */}
-      {/* <Otp otpLength={6} onOtpChange={setOtp}></Otp> */}
-      {/* <AllInputs></AllInputs> */}
-      {/* <button onClick={onButtonClik}>click me</button> */}
-      {/* <Demo a={a}></Demo> */}
-      {/* <Games></Games> */}
-      {/* <RatingConfig ></RatingConfig> */}
-      {/* <DropDownConfig></DropDownConfig> */}
-      {/* <AccordionConfig></AccordionConfig> */}
-      {/* <TabConfig></TabConfig> */}
-      {/* <GridConfig></GridConfig> */}
-      {/* <Pagination></Pagination> */}
-      {/* <AutocompleteConfig></AutocompleteConfig> */}
-      {/* <InfiniteScrollConfig></InfiniteScrollConfig> */}
-      {/* <FileSystem></FileSystem> */}
-      {/* <Carousel></Carousel> */}
-      {/* <JiraConfig></JiraConfig> */}
-      <NestedCheckBox></NestedCheckBox>
+
+
+      <div className="layout-container">
+        <aside className="sidebar">
+          <h2 className="sidebar-title">Sidebar</h2>
+          <nav className="nav-links">
+            <Link className='nav-link' to={`profiles`}>
+              Profiles
+            </Link>
+          </nav>
+        </aside>
+
+        <main className="main-content">
+          <Breadcrumbs/>
+          <Outlet />
+
+            {/* {progress.map((data, index) => (
+              <Progress key={index} complete={data} />
+            ))} */}
+            {/* <Traffic active={activeLight}></Traffic> */}
+            {/* <Otp otpLength={6} onOtpChange={setOtp}></Otp> */}
+            {/* <AllInputs></AllInputs> */}
+            {/* <button onClick={onButtonClik}>click me</button> */}
+            {/* <Demo a={a}></Demo> */}
+            {/* <Games></Games> */}
+            {/* <RatingConfig ></RatingConfig> */}
+            {/* <DropDownConfig></DropDownConfig> */}
+            {/* <AccordionConfig></AccordionConfig> */}
+            {/* <TabConfig></TabConfig> */}
+            {/* <GridConfig></GridConfig> */}
+            {/* <Pagination></Pagination> */}
+            {/* <AutocompleteConfig></AutocompleteConfig> */}
+            {/* <InfiniteScrollConfig></InfiniteScrollConfig> */}
+            {/* <FileSystem></FileSystem> */}
+            {/* <Carousel></Carousel> */}
+            {/* <JiraConfig></JiraConfig> */}
+            {/* <NestedCheckBox></NestedCheckBox> */}
+        </main>
+      </div>
     </>
   );
 }

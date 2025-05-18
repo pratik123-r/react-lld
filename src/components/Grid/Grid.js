@@ -1,5 +1,5 @@
 import './Grid.css'
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 
 function Grid({ n }) {
@@ -16,6 +16,7 @@ function Grid({ n }) {
        tempGridStack.push(index)
        setGridStack(tempGridStack)
     }
+    useCallback(() => {})
 
     function revert() {
         const tempGridStack = [...gridStack]

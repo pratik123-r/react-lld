@@ -3,11 +3,31 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ProfileList from './components/pages/Profile/ProfileList';
+import ProfileDetails from './components/pages/Profile/ProfileDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />, 
+    children: [
+      {
+        path: 'profiles',
+        element: <ProfileList/>,
+      },
+      {
+        path: 'profiles/:id',
+        element: <ProfileDetails/>
+      }
+    ]
+
+  }
+])
 root.render(
   // <React.StrictMode>
-    <App />
+  <RouterProvider router={router}></RouterProvider>
   // </React.StrictMode>
 );
 
