@@ -1,0 +1,13 @@
+.sg {
+    display: grid;
+    column-gap: 12px;
+    row-gap: 12px;
+}
+
+.sg-cell {
+    border: 1px solid black;
+    height: 25px;
+}
+.bg {
+    background-color: red;
+}
