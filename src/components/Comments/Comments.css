@@ -1,0 +1,18 @@
+.container {
+    margin: 100px;
+}
+
+.comment {
+    margin-left: 20px;
+}
+
+.add-comment {
+    display: flex;
+    column-gap: 12px;
+    margin-bottom: 12px;
+
+}
+
+.comment-txt {
+    margin-bottom: 12px;
+}

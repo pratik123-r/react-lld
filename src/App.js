@@ -19,8 +19,9 @@ import JiraConfig from "./components/Jira/Jira.js";
 import NestedCheckBox from "./components/NestedCheckBox/NestedCheckBox.js";
 import { Link, Outlet } from "react-router-dom";
 import Breadcrumbs from "./components/breadcrumbs/Breadcrumbs.jsx";
-import GridConfig2 from "./components/grid-game-2/Grid.jsx";
+// import GridConfig2 from "./components/grid-game-2/Grid.jsx";
 import Spairal from "./components/Spiral/Spiral.jsx";
+import CommentsConfig from "./components/Comments/Comments.jsx";
 
 const lightConifg = {
   red: {
@@ -107,7 +108,8 @@ function App() {
         <main className="main-content">
           <Breadcrumbs/>
           <Outlet />
-          <Spairal></Spairal>
+          <CommentsConfig></CommentsConfig>
+          {/* <Spairal></Spairal> */}
           {/* <GridConfig2></GridConfig2> */}
             {/* {progress.map((data, index) => (
               <Progress key={index} complete={data} />
