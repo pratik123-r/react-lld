@@ -20,9 +20,15 @@ export default function AllInputs() {
 
   const handleChange = (e) => {
     const { name, type, value, checked, files } = e.target;
+
     setFormData((prev) => ({
       ...prev,
-      [name]: type === "file" ? files[0] : value,
+      [name]:
+        type === "file"
+          ? files[0]
+          : type === "checkbox"
+            ? checked ? value : "" // <-- this is the key change
+            : value,
     }));
   };
 
@@ -73,7 +79,7 @@ export default function AllInputs() {
             type="checkbox"
             name="checkbox"
             value="pratik"
-            // checked={formData.checkbox}
+            checked={formData.checkbox}
             onChange={handleChange}
           />
         </label>
