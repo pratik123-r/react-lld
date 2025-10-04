@@ -39,7 +39,7 @@ function CollideCircle() {
     const dx = c1.left - c2.left;
     const dy = c1.top - c2.top;
     const distanceSq = dx * dx + dy * dy;
-    const radiusSum = 50 * 2;
+    const radiusSum = (c1.radius || 50) + (c2.radius || 50);
     return distanceSq <= radiusSum * radiusSum; 
   }
 
