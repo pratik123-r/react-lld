@@ -24,6 +24,7 @@ import Spairal from "./components/Spiral/Spiral.jsx";
 import CommentsConfig from "./components/Comments/Comments.jsx";
 import BishopMoves from "./components/BishopMoves/BishopMoves.js";
 import CollideCircle from "./components/CollideCircle/CollideCircle.jsx";
+import StickyNotes from "./components/StickyNotes/StickyNotes.jsx";
 
 const lightConifg = {
   red: {
@@ -110,7 +111,8 @@ function App() {
         <main className="main-content">
           <Breadcrumbs/>
           <Outlet />
-          <CollideCircle></CollideCircle>
+          <StickyNotes></StickyNotes>
+          {/* <CollideCircle></CollideCircle> */}
           {/* <BishopMoves></BishopMoves> */}
           {/* <CommentsConfig></CommentsConfig> */}
           {/* <Spairal></Spairal> */}

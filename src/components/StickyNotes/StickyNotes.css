@@ -1,0 +1,22 @@
+.sn-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 1px solid black;
+}
+
+.sticky-note {
+    width: 100px;
+    height: 25px;
+    padding: 12px;
+    border: 1px solid black;
+    position: absolute;
+    background-color: antiquewhite;
+    /* transform: translate(); */
+}
+
+.sticky-note:hover {
+    cursor: grabbing;
+}
+
+
