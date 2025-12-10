@@ -10,7 +10,6 @@ export default function Games() {
     const winner = getWinner()
   
     function getWinner() {
-  
       const lines = []
   
       for (let r = 0; r < N; r++) {

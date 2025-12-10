@@ -111,7 +111,7 @@ function App() {
         <main className="main-content">
           <Breadcrumbs/>
           <Outlet />
-          <StickyNotes></StickyNotes>
+          {/* <StickyNotes></StickyNotes> */}
           {/* <CollideCircle></CollideCircle> */}
           {/* <BishopMoves></BishopMoves> */}
           {/* <CommentsConfig></CommentsConfig> */}
@@ -133,7 +133,7 @@ function App() {
             {/* <GridConfig></GridConfig> */}
             {/* <Pagination></Pagination> */}
             {/* <AutocompleteConfig></AutocompleteConfig> */}
-            {/* <InfiniteScrollConfig></InfiniteScrollConfig> */}
+            <InfiniteScrollConfig></InfiniteScrollConfig>
             {/* <FileSystem></FileSystem> */}
             {/* <Carousel></Carousel> */}
             {/* <JiraConfig></JiraConfig> */}
